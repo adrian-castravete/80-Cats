@@ -1,0 +1,3 @@
+[submodule "fkge"]
+	path = fkge
+	url = https://github.com/adrian-castravete/fkge-love
