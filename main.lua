@@ -1,17 +1,14 @@
 fkge = require("fkge")
 lg = love.graphics
+lg.setDefaultFilter("nearest", "nearest")
 require("things")
 
 fkge.scene("game", function ()
-	fkge.entity("cat").attr {
-		x = 120,
-		y = 80,
-	}
-	for j=0, 1 do
-		for i=0, 1 do
+	for j=0,	4 do
+		for i=0, 6 do
 			fkge.entity("cat").attr {
-				x = i*240, 
-				y = j*160,
+				x = i*40, 
+				y = j*40,
 			}
 		end
 	end
